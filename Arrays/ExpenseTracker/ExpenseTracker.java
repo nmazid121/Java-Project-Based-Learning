@@ -1,3 +1,5 @@
+package Arrays.ExpenseTracker;
+
 import java.util.Scanner;
 
 public class ExpenseTracker {
