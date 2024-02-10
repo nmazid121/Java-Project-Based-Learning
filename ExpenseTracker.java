@@ -34,6 +34,16 @@ public class ExpenseTracker {
         }
     }
 
+    public static void calculateTotal(int [] argsArray) {
+        int sum = 0;
+        for (int i = 0; i < argsArray.length; i++) {
+            if (argsArray[i] != 0) {
+                sum += argsArray[i];
+            }
+        }
+        System.out.println("The total sum is: " + sum);
+    }
+
     public static void main (String[] args) {
         Scanner input = new Scanner(System.in);
 
@@ -56,5 +66,8 @@ public class ExpenseTracker {
             System.out.println("Showing current expenses :");
             showExpenses(argsArray);
             }
+        
+        calculateTotal(argsArray);
+
         } 
     }
