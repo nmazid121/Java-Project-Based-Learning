@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
 public class Expenses {
-       public static void addExpense(int [] argsArray, int deposit) {
+       public static void addExpense(int [] argsArray, String [] descriptionArray, int deposit, String description) {
         // insertion for the expense
         int count = 0;
         for (int i = 0; i < argsArray.length; i++) {
@@ -10,7 +10,9 @@ public class Expenses {
                 }
             }
             argsArray[count] = deposit;
+            descriptionArray[count] = description;
             System.out.println("Added " + deposit + " to the expenses");
+            System.out.println("Added " + "'" + description + "'" + " to the description");
         }
 
     public static void deleteExpense(int [] argsArray, int remove) {
@@ -22,12 +24,13 @@ public class Expenses {
         System.out.println("Removed Expense " + remove);
     }
 
-    public static void showExpenses(int [] argsArray) {
+    public static void showExpenses(int [] argsArray, String [] descriptionArray) {
         // shows all the expenses that are not 0
         for (int i = 0; i < argsArray.length; i++) {
             int startCounter = i+1;
             if (argsArray[i] != 0) {
                 System.out.println("Expense " + startCounter + " : " + argsArray[i]);
+                System.out.println("Expense description " + startCounter + " : " + descriptionArray[i]);
             }
         }
     }
@@ -44,29 +47,50 @@ public class Expenses {
 
     public static void main (String[] args) {
         Scanner input = new Scanner(System.in);
-
         int [] argsArray = new int[50];
+        String [] descriptionArray = new String[50];
         for (int i = 0; i < args.length; i++) {
             argsArray[i] = Integer.parseInt(args[i]);
         }
 
-        System.out.println("Add an expense?");
-        String answer = input.nextLine();
-        if (answer.equals("Yes") || answer.equals("yes")) {
-            System.out.println("How much would you like to deposit?");
-            addExpense(argsArray, input.nextInt());
-            showExpenses(argsArray);
-        } else if (answer.equals("no") || answer.equals("No")) {
-            System.out.println("What expense would you like to remove?");
-            deleteExpense(argsArray, input.nextInt());
-            showExpenses(argsArray);
-        } else {
-            System.out.println("Showing current expenses :");
-            showExpenses(argsArray);
-            }
-        
-        calculateTotal(argsArray);
+    
 
+        while (true) {
+            System.out.println("Choose an action: [1] Add Expense [2] Remove Expense [3] Calculate Total [4] Show Expenses [5] Exit");
+            int action = input.nextInt();
+            input.nextLine();
+            switch (action) {
+                case 1:
+                    System.out.println("Add an expense");
+                    int amount = input.nextInt();
+                    input.nextLine(); // Consume the newline left behind by nextInt()
+                    System.out.println("Add a description");
+                    String description = input.nextLine();
+                    addExpense(argsArray, descriptionArray, amount, description);
+                    break;
+                case 2:
+                    System.out.println("Remove an expense");
+                    input.nextLine();
+                    deleteExpense(argsArray, input.nextInt());
+                    break;
+                case 3:
+                    System.out.println("Calculate the total sum");
+                    calculateTotal(argsArray);
+                    break;
+                case 4:
+                    System.out.println("Show the expenses");
+                    showExpenses(argsArray, descriptionArray);
+                    break;
+                case 5:
+                    System.out.println("Exiting");
+                    return;
+                default:
+                System.out.println("Invalid input, try again.");
+                    break;
+            }
+        }
+        
+        
         } 
     }
 
