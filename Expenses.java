@@ -1,11 +1,7 @@
-package Arrays.ExpenseTracker;
-
 import java.util.Scanner;
 
-public class ExpenseTracker {
-    
-    
-    public static void addExpense(int [] argsArray, int deposit) {
+public class Expenses {
+       public static void addExpense(int [] argsArray, int deposit) {
         // insertion for the expense
         int count = 0;
         for (int i = 0; i < argsArray.length; i++) {
@@ -73,3 +69,4 @@ public class ExpenseTracker {
 
         } 
     }
+
