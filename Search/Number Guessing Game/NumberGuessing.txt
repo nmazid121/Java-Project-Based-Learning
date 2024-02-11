@@ -1,0 +1,29 @@
+Number Guessing 
+
+Overview
+
+The Number Guessing Game is a simple Java console application where the computer randomly selects a number between 1 and 100, and then attempts to guess it using a binary search algorithm. 
+This game demonstrates the efficiency of binary search compared to linear search and provides an interactive way to understand how these algorithms work.
+
+Features
+
+Random Number Generation: The game generates a random number for the computer to guess.
+Binary Search Algorithm: The computer uses a binary search algorithm to efficiently guess the random number.
+Guess Feedback: After each guess, the game provides feedback on whether the computer's guess was too high or too low.
+
+How to Run
+
+Compile the Java program using javac NumberGuessing.java.
+Run the compiled class with java NumberGuessing.
+The computer will automatically start guessing the number, with feedback provided for each guess.
+
+How it Works
+
+The generateRandomNumber method generates a random number between 1 and 100.
+The main method initializes an array with numbers from 1 to 100 to simulate a range of numbers.
+The binary search is performed within the main method using a while loop that continues until the computer guesses the correct number.
+The game prints out whether each guess is too high or too low until the correct number is guessed.
+
+Note
+
+The linear search functionality and user guessing functionality are commented out but can be included for additional features.
