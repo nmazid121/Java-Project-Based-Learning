@@ -78,12 +78,10 @@ public class NumberGuessing {
             }
         }
 
-        // Outputting the guess array
-        /*
+
         for(int i = 0; i < hundredArray.length; i++) {
             System.out.println(i + " : " + hundredArray[i]);
         }
 
-        */
     }    
 }
