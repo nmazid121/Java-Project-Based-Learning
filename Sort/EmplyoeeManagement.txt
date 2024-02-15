@@ -1,0 +1,38 @@
+Project Title: Employee Management System with Bubble Sort
+Project Description:
+Develop an Employee Management System (EMS) in Java that utilizes the Bubble Sort algorithm to sort employees based on various attributes such as employee ID, name, or salary. 
+The system will provide functionalities to add, update, delete, and display employee records. Sorting employees will help in quickly accessing records in an organized manner.
+
+Key Features:
+
+Employee Record Management: Implement functionalities to add new employee records, update existing ones, delete records, and retrieve and display records from the system.
+Sorting Functionality: Integrate Bubble Sort to sort employee records. Provide options to sort by different attributes like ID, name, and salary.
+Command-Line Interface: Develop a simple and user-friendly command-line interface (CLI) that allows users to interact with the system.
+File Handling: Store employee records in a file and implement file handling to read and write records. This will make the data persistent across system restarts.
+Search Functionality: Implement a search feature to find employee records based on attributes like name or ID.
+
+Technologies and Tools:
+Java: The primary programming language for building the system.
+File Handling in Java: For reading from and writing to files, ensuring data persistence.
+Eclipse or IntelliJ IDEA: Recommended IDEs for Java development.
+
+
+Steps to Get Started:
+
+Plan Your Application: Define the structure of an employee record (e.g., ID, name, department, salary). Plan the functionalities and commands your CLI will support.
+Setup Your Development Environment: Ensure Java is installed and choose an IDE.
+Implement Data Structures: Define classes and data structures for handling employee records.
+Develop the CLI: Create a CLI for user interaction, using standard input and output.
+
+
+Implement Bubble Sort: Write a Bubble Sort function that can sort employee records based on specified attributes.
+File Handling: Implement functions to read from and write to a file for storing employee records.
+Integrate Sorting with the EMS: Use your Bubble Sort implementation to sort records as part of the system's functionality.
+Testing: Test your system thoroughly with various scenarios to ensure all functionalities work as expected.
+
+
+Stretch Goals:
+GUI Implementation: Enhance the system by developing a graphical user interface (GUI) using Java Swing or JavaFX.
+More Sorting Options: Add functionality to sort by multiple attributes simultaneously (e.g., department then salary).
+Advanced Search: Implement more advanced search capabilities, such as partial matches for names.
+This project focuses on applying Bubble Sort in a real-world scenario, improving your understanding of sorting algorithms while also broadening your experience with Java development, particularly in handling more complex data structures and file operations.
