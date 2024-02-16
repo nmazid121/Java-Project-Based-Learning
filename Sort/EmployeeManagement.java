@@ -84,7 +84,7 @@ public class EmployeeManagement {
  public static void main(String[] args) {
     EmployeeManagement[] employees = new EmployeeManagement[20];
     
-    employees[10] = new EmployeeManagement(11, "Chloe", 27);
+    employees[10] = new EmployeeManagement(11, "Chloe", 27); 
     employees[11] = new EmployeeManagement(12, "Daniel", 40);
     employees[12] = new EmployeeManagement(13, "Laura", 26);
     employees[13] = new EmployeeManagement(14, "Kevin", 38);
