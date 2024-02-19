@@ -80,6 +80,43 @@ public class EmployeeManagement {
         }
     }
 
+    public static void bubbleSortHiToLoSalary (EmployeeManagement[] employees) {
+        // bubble sort for the id numbers
+        for (int i = 0; i < employees.length; i++) {
+            for (int j = 0; j < employees.length - 1 - i; j++) {
+                if (employees[j].getSalary() < employees[j+1].getSalary()) {
+                    EmployeeManagement temp = employees[j];
+                    employees[j] = employees[j+1];
+                    employees[j+1] = temp; 
+                }
+            }
+        }
+    }
+    public static void bubbleSortHiToLoSalary (EmployeeManagement[] employees) {
+        // bubble sort for the id numbers
+        for (int i = 0; i < employees.length; i++) {
+            for (int j = 0; j < employees.length - 1 - i; j++) {
+                if (employees[j].getSalary() < employees[j+1].getSalary()) {
+                    EmployeeManagement temp = employees[j];
+                    employees[j] = employees[j+1];
+                    employees[j+1] = temp; 
+                }
+            }
+        }
+    }
+    // public static void bubbleSortHiToLoSalary (EmployeeManagement[] employees) {
+        // bubble sort for the id numbers
+        for (int i = 0; i < employees.length; i++) {
+            for (int j = 0; j < employees.length - 1 - i; j++) {
+                if (employees[j].getSalary() < employees[j+1].getSalary()) {
+                    EmployeeManagement temp = employees[j];
+                    employees[j] = employees[j+1];
+                    employees[j+1] = temp; 
+                }
+            }
+        }
+    }
+
 
  public static void main(String[] args) {
     EmployeeManagement[] employees = new EmployeeManagement[20];
