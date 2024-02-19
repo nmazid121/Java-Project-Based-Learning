@@ -1,0 +1,22 @@
+Project: Contact Management System
+
+Project Goal: Create a Java application that manages contacts using a singly linked list. The application will be capable of adding new contacts, deleting existing ones, and searching for specific contacts based on their information.
+
+Core Concepts to Practice:
+
+Node Creation: Understand how to define a node class with necessary attributes.
+List Operations: Implement methods for adding nodes (contacts), deleting nodes, and finding nodes within the list.
+Traversal: Practice traversing the linked list to perform operations like displaying all contacts.
+Edge Cases: Handle edge cases such as inserting at the beginning/end of the list or deleting the first/last element.
+Features to Implement:
+
+Add Contact: Prompt the user to enter contact details and add a new contact to the list.
+Delete Contact: Allow the user to delete a contact by a unique identifier, such as name or email.
+Search Contact: Enable searching for a contact and display the details.
+Display Contacts: Show a list of all contacts currently stored.
+Exit Program: Give the user the option to exit the program.
+User Interface: You can use the console for input and output operations. Make it interactive with a simple text menu that provides options to perform the various features.
+
+Testing: After implementation, thoroughly test each feature to ensure that your linked list handles all operations correctly.
+
+By the end of this project, you should have a stronger understanding of how singly linked lists function in Java, particularly how they manage memory and pointers (references in Java). This will also solidify your understanding of object-oriented programming principles.
