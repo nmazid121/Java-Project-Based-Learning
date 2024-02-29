@@ -6,7 +6,7 @@ public class ContactManagement {
     public static class Node {
         int data;
         Node next;
-        Node hungHung;
+        
         Node (int d) {
             data  = d;
             next = null;
