@@ -2,7 +2,7 @@ import java.io.NotActiveException;
 
 public class ContactManagement {
 
-    // creating the class for the Nodes
+    // creating the class for the Nodes 
     public static class Node {
         int data;
         Node next;
