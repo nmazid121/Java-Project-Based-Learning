@@ -16,7 +16,7 @@ public class ContactManagement {
             return data;
         }
     }
-
+ 
     Node head;
 
     // constructor for the ContactManagement classs
