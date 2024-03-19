@@ -96,6 +96,13 @@ public class ContactManagement {
         headContactM.addLast(50);
         System.out.println(headContactM);
 
+        System.out.println("Is the list empty?");
+        if (headContactM.isEmpty() == true) {
+            System.out.println("Yes");
+        } else {
+            System.out.println("No");
+        }
+
 
 
     }
